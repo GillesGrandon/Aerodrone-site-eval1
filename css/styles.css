@@ -40,7 +40,7 @@ header {
     align-items: center;
     height: 15rem;
     transition: opacity 0.3s ease-in-out;
-    transition: translateX 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .header-hero:hover {
@@ -69,6 +69,10 @@ header .header-nav {
 **** NAV BAR ******
 ********** ********/
 
+.navbar-toggler-custom {
+    color: white;
+}
+
 .header-nav {
     background-color: #26547C;
     box-shadow: 2px 3px 5px #26547C;
@@ -79,12 +83,43 @@ header .header-nav {
     color: white;
 }
 
+
+/*todo */
+
 .navbar .navbar-nav .nav-rotate {
     transition: transform 1.2 ease-in-out;
 }
 
+
+/*todo */
+
 .navbar .navbar-nav .nav-rotate:hover {
     transform: rotateZ(360deg);
+}
+
+
+/*todo */
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.nav-link .nav-background-active {
+    opacity: 0.5;
+    background-image: linear-gradient( -45deg, #26547C, #3795BE, #26547C, white, #3795BE, );
+    animation: background_anim 30s ease infinite;
+}
+
+@keyframes background_anim {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 
@@ -121,7 +156,7 @@ main section .section-block .block-text {
     min-height: 42rem;
     margin-bottom: 50px;
     background-color: lightgray;
-    box-shadow: 5px 5px 5px lightgray;
+    box-shadow: 10px 10px 10px #75472F;
 }
 
 .card-header {
@@ -164,7 +199,7 @@ article p {
 ********** *****/
 
 footer {
-    background-color: #ff0000;
+    background-color: #26547C;
     padding-block: 3.5rem;
     height: 20rem;
     border-color: red;
