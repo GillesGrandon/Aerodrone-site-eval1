@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Evenements</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Découvrez notre association de compétition de drone" />
+    <meta name="description" content="Toutes les courses de drone passées et avenir" />
     <meta name="keywords" content="sport , détente , convivialité, action, aéronef, drone " />
     <meta name="author" content="Gilles Grandon" />
     <meta name="robots" content="all" />
@@ -48,11 +48,11 @@
 <body>
     <div class="container-fluid p-0">
         <header>
-            <div class="header_hero">
-                <div class="header_logo">logo</div>
-                <div class="header_title">title</div>
+            <div class="header-hero">
+                <div class="header-logo">logo</div>
+                <div class="header-title">title</div>
             </div>
-            <div class="header_nav">
+            <div class="header-nav">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,6 +75,9 @@
                                 <a class="nav-link" href="#">A propos</a>
                             </li>
                         </ul>
+                        <div class="card-body footer">
+
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -84,35 +87,32 @@
     <div class="container">
         <main>
             <h2 class="text-center text-uppercase my-4">Evénements</h2>
-            <section class="courses-precedentes">
+            <section class="previous-race">
+                <!-- ************** previous race -->
                 <h3 class="text-center text-md-start mb-3">Courses précédentes</h3>
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <div class="card">
                             <div class="card-header">
-
                                 <img class="card-img-top img-fluid" src="assets/img/img_download/previous_race_1.png" alt="Drone Race ">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">ANDRIANNA</h5>
+                                <h5 class="card-title">HELENA</h5>
                                 <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                     consequat. Duis aute irure dolor in reprehenderit
                                 </p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class=" list-group-item">
-                                    <span class="title">Nom : </span>
-                                    <span class="data">ANDRIANNA</span>
-                                </li>
+                                <li class=" list-group-item d-flex flex-column">
 
-                                <li class="list-group-item">
-                                    <span class="title">Nombres de participants : </span>
-                                    <span class="data">18</span>
+                                    <div class="card-race-data py-2 px-2">Nombres de participants : 24</div>
+                                    <div class="card-race-data py-2 px-2">Date : 14 mars 2022</div>
+                                    <div class="card-race-data py-2 px-2">Lieu : Dublin</div>
+                                    <div class="card-race-data py-2 px-2">Vainqueur : Martin</div>
                                 </li>
                             </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                            <div class="card-body footer">
+
                             </div>
                         </div>
                     </div>
@@ -120,20 +120,24 @@
                         <div class="card">
                             <div class="card-header">
 
-                                <img class="card-img-top" src="assets/img/img_compressed/previous_race_2.png" alt="Drone Race ">
+                                <img class="card-img-top" src="assets/img/previous_race_2.png" alt="Drone Race ">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">CALISTA</h5>
-                                <p class="card-text"></p>
+                                <h5 class="card-title">IONA</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit</p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
+                                <li class=" list-group-item d-flex flex-column">
+
+                                    <div class="card-race-data py-2 px-2">Nombres de participants : 24</div>
+                                    <div class="card-race-data py-2 px-2">Date : 14 mars 2022</div>
+                                    <div class="card-race-data py-2 px-2">Lieu : Dublin</div>
+                                    <div class="card-race-data py-2 px-2">Vainqueur : Martin</div>
+                                </li>
                             </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                            <div class="card-body footer">
+
                             </div>
                         </div>
                     </div>
@@ -141,20 +145,97 @@
                         <div class="card">
                             <div class="card-header">
 
-                                <img class="card-img-top img-fluid" src="assets/img/img_compressed/previous_race_3.png" alt="Drone Race">
+                                <img class="card-img-top img-fluid" src="assets/img/previous_race_3.png" alt="Drone Race">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">DÉLIA</h5>
-                                <p class="card-text"></p>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit</p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
+                                <li class=" list-group-item d-flex flex-column">
+
+                                    <div class="card-race-data py-2 px-2">Nombres de participants : 24</div>
+                                    <div class="card-race-data py-2 px-2">Date : 14 mars 2022</div>
+                                    <div class="card-race-data py-2 px-2">Lieu : Dublin</div>
+                                    <div class="card-race-data py-2 px-2">Vainqueur : Martin</div>
+                                </li>
                             </ul>
+                            <div class="card-body footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <img class="card-img-top" src="assets/img/previous_race_4.png" alt="Drone Race">
+                            </div>
                             <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                                <h5 class="card-title">DELOS</h5>
+                                <p class="card-text"></p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class=" list-group-item d-flex flex-column">
+
+                                    <div class="card-race-data py-2 px-2">Nombres de participants : 24</div>
+                                    <div class="card-race-data py-2 px-2">Date : 14 mars 2022</div>
+                                    <div class="card-race-data py-2 px-2">Lieu : Dublin</div>
+                                    <div class="card-race-data py-2 px-2">Vainqueur : Martin</div>
+                                </li>
+                            </ul>
+                            <div class="card-body footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <img class="card-img-top img-fluid" src="assets/img/previous_race_5.png" alt="Drone Race">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">DIANA</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class=" list-group-item d-flex flex-column">
+
+                                    <div class="card-race-data py-2 px-2">Nombres de participants : 24</div>
+                                    <div class="card-race-data py-2 px-2">Date : 14 mars 2022</div>
+                                    <div class="card-race-data py-2 px-2">Lieu : Dublin</div>
+                                    <div class="card-race-data py-2 px-2">Vainqueur : Martin</div>
+                                </li>
+                            </ul>
+                            <div class="card-body footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <img class="card-img-top" src="assets/img/previous_race_6.png" alt="Drone Race ">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">ANDRIANNA</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class=" list-group-item d-flex flex-column">
+                                    <div class="card-race-data py-2 px-2">Nombres de participants : 24</div>
+                                    <div class="card-race-data py-2 px-2">Date : 14 mars 2022</div>
+                                    <div class="card-race-data py-2 px-2">Lieu : Dublin</div>
+                                    <div class="card-race-data py-2 px-2">Vainqueur : Martin</div>
+                                </li>
+                            </ul>
+                            <div class="card-body footer">
+
                             </div>
                         </div>
                     </div>
@@ -162,75 +243,79 @@
 
 
                 </div>
+            </section>
+            <!-- ************** next race -->
+            <section class="next-race">
+                <h3 class="text-center text-md-start mb-3">Courses suivantes</h3>
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <div class="card">
                             <div class="card-header">
-                                <img class="card-img-top" src="assets/img/img_compressed/previous_race_4.png" alt="Drone Race">
+                                <img class="card-img-top" src="assets/img/next_race_1.png" alt="Drone Race">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">DELOS</h5>
                                 <p class="card-text"></p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
+                                <li class=" list-group-item d-flex flex-column">
+                                    <div class="card-race-data py-2 px-2">Nombres de participants : 24</div>
+                                    <div class="card-race-data py-2 px-2">Date : 14 octobre 2022</div>
+                                    <div class="card-race-data py-2 px-2">Lieu : Dublin</div>
+                                </li>
                             </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                            <div class="card-body footer">
+
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="card">
-                            <img class="card-img-top img-fluid" src="assets/img/img_compressed/previous_race_5.png" alt="Drone Race">
+                            <div class="card-header">
+                                <img class="card-img-top img-fluid" src="assets/img/next_race_2.png" alt="Drone Race">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">DIANA</h5>
                                 <p class="card-text"></p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
+                                <li class=" list-group-item d-flex flex-column">
+                                    <div class="card-race-data py-2 px-2">Nombres de participants : 24</div>
+                                    <div class="card-race-data py-2 px-2">Date : 14 octobre 2022</div>
+                                    <div class="card-race-data py-2 px-2">Lieu : Dublin</div>
+                                </li>
                             </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                            <div class="card-body footer">
+
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="card">
-                            <img class="card-img-top" src="assets/img/img_compressed/previous_race_6.png" alt="Drone Race ">
+                            <div class="card-header">
+                                <img class="card-img-top" src="assets/img/next_race_3.png" alt="Drone Race">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">ANDRIANNA</h5>
                                 <p class="card-text"></p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
+                                <li class=" list-group-item d-flex flex-column">
+                                    <div class="card-race-data py-2 px-2">Nombres de participants : 24</div>
+                                    <div class="card-race-data py-2 px-2">Date : 14 octobre 2022</div>
+                                    <div class="card-race-data py-2 px-2">Lieu : Dublin</div>
+                                </li>
                             </ul>
-                            <div class="card-body">
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                            <div class="card-body footer">
+
                             </div>
+
                         </div>
                     </div>
-
-
-
                 </div>
-            </section>
-
-            <section>
-                <h3 class="text-center">Courses suivantes</h3>
             </section>
         </main>
     </div>
-
 </body>
 
 </html>

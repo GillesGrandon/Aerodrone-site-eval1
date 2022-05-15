@@ -13,6 +13,19 @@ body {
     overflow-x: hidden;
 }
 
+palette {
+    background-color: #26547C;
+    background-color: #3795BE;
+    background-color: #75472F;
+    background-color: #D11026;
+    background-color: #075F3C;
+}
+
+
+/*******************
+****** Header ******
+*******************/
+
 header {
     border: 1px solid blue;
     display: flex;
@@ -20,89 +33,81 @@ header {
     justify-content: start;
 }
 
-.header_hero {
+.header-hero {
     border: 1px solid rgb(6, 6, 110);
     background: url('../assets/img/hero_background_forest.jpg') no-repeat 100% 100% / cover;
     display: flex;
     align-items: center;
     height: 15rem;
     transition: opacity 0.3s ease-in-out;
-    transition: translate 0.3s ease-in-out;
+    transition: translateX 0.3s ease-in-out;
 }
 
-.header_hero:hover {
+.header-hero:hover {
     opacity: 0.5;
-    transform: translate(20, 30);
+    transform: translateX(20, 30);
 }
 
-header .header_logo {
+header .header-logo {
     border: 1px solid rgb(0, 8, 255);
     width: 20rem;
 }
 
-header .header_title {
+header .header-title {
     border: 1px solid rgb(0, 8, 255);
     width: 20rem;
 }
 
-header .header_nav {
+header .header-nav {
     padding-left: 5px;
-    border-bottom: 1px solid red;
-    box-shadow: 12px 12px 10px 1px rgba(0, 0, 255, .2);
+    /* border-bottom: 1px solid red; */
+    /* box-shadow: 12px 12px 10px 1px rgba(0, 0, 255, .2); */
 }
 
 
-/********** ****************************/
+/********** *******
+**** NAV BAR ******
+********** ********/
 
-
-/**** NAV BAR ******/
-
-
-/********** ****************************/
-
-nav-bar nav-item ul li div::before {
-    padding-inline: 1.2rem;
-    color: inherit;
-    height: 100%;
-    position: relative;
-    padding-top: 1.5rem
+.header-nav {
+    background-color: #26547C;
+    box-shadow: 2px 3px 5px #26547C;
 }
 
-nav-bar nav-item ul li div::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 6px;
-    background-color: #cbe300;
+.navbar .navbar-nav .nav-link {
+    font-size: 1rem;
+    color: white;
+}
+
+.navbar .navbar-nav .nav-rotate {
+    transition: transform 1.2 ease-in-out;
+}
+
+.navbar .navbar-nav .nav-rotate:hover {
+    transform: rotateZ(360deg);
 }
 
 
-/********** *****/
-
-
-/**** Main ******/
-
-
-/********** *****/
+/********** *****
+**** Main ******
+********** *****/
 
 main {
     padding-inline: 0.75;
 }
 
-main section .section_block {
+main section .section-block {
     display: flex;
     /* justify-content: space-around; */
     border: 1px solid rgb(37, 167, 15);
 }
 
-main section .section_block .block_text {
+main section .section-block .block-text {
     display: flex;
 }
 
-.courses-precedentes .card-img-top {
+.next-race .card-img-top,
+.previous-race .card-img-top {
     height: 200px;
     width: 100%;
     object-fit: cover;
@@ -116,6 +121,7 @@ main section .section_block .block_text {
     min-height: 42rem;
     margin-bottom: 50px;
     background-color: lightgray;
+    box-shadow: 5px 5px 5px lightgray;
 }
 
 .card-header {
@@ -124,27 +130,28 @@ main section .section_block .block_text {
 }
 
 .card img:hover {
-    cursor: crosshair;
     transform: scale(1.5);
-    background-color: red;
+}
+
+.card-body footer {
+    height: 4rem;
+    border-color: rgb(0, 8, 255);
 }
 
 section {
     margin-bottom: 3.5rem;
 }
 
-.img_container {
+.img-container {
     /* width: 10rem;
     height: 10rem; */
     border: 1px solid red;
 }
 
-.img_container img {
+.img-container img {
     display: inline-block;
     width: 100%;
     height: auto;
-    border: 1px solid red;
-    background-color: mediumpurple;
 }
 
 article p {
@@ -152,18 +159,16 @@ article p {
 }
 
 
-/********** *****/
-
-
-/**** Footer ******/
-
-
-/********** *****/
+/***************
+**** Footer ****
+********** *****/
 
 footer {
-    background-color: #65656711;
+    background-color: #ff0000;
     padding-block: 3.5rem;
-    height: 10rem;
+    height: 20rem;
+    border-color: red;
+    /* overflow: hidden; */
 }
 
 footer .icon {
@@ -176,25 +181,24 @@ footer .icon:hover {
     transform: scale(1.5) rotateZ(360deg);
 }
 
-footer .footer_block {
-    border: 1px solid red;
+footer .footer-block {
     height: 10rem;
 }
 
-footer .footer_block a {
+footer .footer-block a {
     text-decoration: none;
     list-style: none;
 }
 
-footer .footer_block ul {
+footer .footer-block ul {
     list-style: none;
 }
 
-footer .footer_block a:hover {
+footer .footer-block a:hover {
     text-decoration: none;
 }
 
-footer .footer_block ul li:nth-child(1) {
+footer .footer-block ul li:nth-child(1) {
     background-color: #b9b9b9;
 }
 
